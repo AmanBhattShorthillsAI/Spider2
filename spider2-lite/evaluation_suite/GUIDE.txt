@@ -1,0 +1,218 @@
+SPIDER2 EVALUATION SUITE V2 - PRACTICAL USAGE GUIDE
+=====================================================
+
+This guide explains how to set up and run the evaluation script, including directory structure,
+file placement, and command execution.
+
+DIRECTORY STRUCTURE
+==================
+
+Your project should have the following structure:
+
+spider2-lite/
+├── evaluation_suite/
+│   ├── evaluate_v2.py          # Main evaluation script
+│   ├── README_V2.md            # Detailed documentation
+│   ├── USAGE_GUIDE.txt         # This file
+│   ├── gold/                   # Gold standard data directory
+│   │   ├── sql/                # Gold SQL queries
+│   │   │   ├── local001.sql
+│   │   │   ├── local002.sql
+│   │   │   ├── bq001.sql
+│   │   │   ├── sf001.sql
+│   │   │   └── ...
+│   ├── exec_result/            # Gold execution results (CSV files)
+│   │   ├── local001.csv
+│   │   ├── local002.csv
+│   │   ├── bq001.csv
+│   │   ├── sf001.csv
+│   │   └── ...
+│   ├── spider2lite_eval.jsonl  # Evaluation configuration file
+│   └── spider2-lite.jsonl      # Metadata file
+├── resource/
+│   └── databases/
+│       └── spider2-localdb/    # SQLite database files
+│           ├── database1.sqlite
+│           ├── database2.sqlite
+│           └── ...
+├── temp/                       # Temporary directory (will be created automatically)
+└── bigquery_credential.json   # BigQuery credentials (if using BigQuery)
+
+FILE PLACEMENT INSTRUCTIONS
+==========================
+
+1. GOLD STANDARD DATA (Required)
+   ------------------------------
+   
+   Place your gold standard data in the evaluation_suite/gold/ directory:
+   
+   a) SQL Queries (evaluation_suite/gold/sql/):
+      - local001.sql, local002.sql, etc. (for local SQLite databases)
+      - bq001.sql, bq002.sql, etc. (for BigQuery)
+      - sf001.sql, sf002.sql, etc. (for Snowflake)
+   
+   b) Execution Results (evaluation_suite/gold/exec_result/):
+      - local001.csv, local002.csv, etc. (results of gold SQL queries)
+      - bq001.csv, bq002.csv, etc.
+      - sf001.csv, sf002.csv, etc.
+   
+   c) Configuration Files:
+      - spider2lite_eval.jsonl: Contains evaluation parameters for each instance
+      - spider2-lite.jsonl: Contains metadata like database names for each instance
+
+2. PREDICTED RESULTS (Your submission)
+   -----------------------------------
+   
+   Place your predicted results in a directory of your choice:
+   
+   a) For SQL Mode:
+      - Create a directory (e.g., "my_submission_sql")
+      - Place .sql files: local001.sql, local002.sql, etc.
+   
+   b) For Execution Result Mode:
+      - Create a directory (e.g., "my_submission_csv")
+      - Place .csv files: local001.csv, local002.csv, etc.
+
+3. DATABASE FILES (For local instances)
+   ------------------------------------
+   
+   Place SQLite database files in resource/databases/spider2-localdb/
+   - database1.sqlite, database2.sqlite, etc.
+
+4. CREDENTIALS (For cloud databases)
+   ---------------------------------
+   
+   a) BigQuery: Place bigquery_credential.json in the root directory
+   b) Snowflake: Place snowflake_credential.json in the root directory
+
+COMMAND EXECUTION
+=================
+
+1. NAVIGATE TO THE CORRECT DIRECTORY
+   ----------------------------------
+   
+   You must run the Python command from the spider2-lite/ directory:
+   
+   cd /path/to/spider2-lite/
+   
+   NOT from evaluation_suite/ or any other subdirectory.
+
+2. RUN THE EVALUATION SCRIPT
+   --------------------------
+   
+   A) SQL MODE (Execute SQL queries and compare results):
+   
+   python evaluation_suite/evaluate_v2.py --mode sql --result_dir my_submission_sql --gold_dir evaluation_suite/gold
+   
+   B) EXECUTION RESULT MODE (Compare CSV files directly):
+   
+   python evaluation_suite/evaluate_v2.py --mode exec_result --result_dir my_submission_csv --gold_dir evaluation_suite/gold
+   
+   C) With debugging enabled:
+   
+   python evaluation_suite/evaluate_v2.py --mode sql --result_dir my_submission_sql --gold_dir evaluation_suite/gold --is_sql_debug
+
+3. COMMAND PARAMETERS EXPLAINED
+   -----------------------------
+   
+   --mode: Choose between "sql" or "exec_result"
+   --result_dir: Path to your predicted results directory
+   --gold_dir: Path to the gold standard data directory
+   --is_sql_debug: Optional flag for detailed SQL execution logging
+
+EXAMPLE WORKFLOW
+===============
+
+1. SETUP:
+   - Place gold SQL files in evaluation_suite/gold/sql/
+   - Place gold CSV results in evaluation_suite/gold/exec_result/
+   - Place your predicted SQL files in my_submission_sql/
+   - Ensure all required files are in place
+
+2. RUN EVALUATION:
+   cd spider2-lite/
+   python evaluation_suite/evaluate_v2.py --mode sql --result_dir my_submission_sql --gold_dir evaluation_suite/gold
+
+3. CHECK OUTPUTS:
+   - Console output shows evaluation results
+   - my_submission_sql-ids.csv: List of correctly answered instances
+   - my_submission_sql-detailed-metrics.json: Detailed metrics for each instance
+   - log.txt: Execution log
+   - errors.log: Error log (if any errors occurred)
+
+FILE NAMING CONVENTIONS
+======================
+
+1. INSTANCE IDS:
+   - local001, local002, etc. (for local SQLite databases)
+   - bq001, bq002, etc. (for BigQuery)
+   - sf001, sf002, etc. (for Snowflake)
+
+2. FILE EXTENSIONS:
+   - SQL files: .sql
+   - Result files: .csv
+   - Configuration files: .jsonl
+
+3. DATABASE NAMES:
+   - Must match the database names specified in spider2-lite.jsonl
+   - SQLite files should be named as database_name.sqlite
+
+PERFORMANCE TIPS
+================
+
+1. For large datasets:
+   - Use execution result mode if possible (avoids re-executing SQL)
+   - Ensure sufficient disk space for temporary files
+   - Monitor memory usage during execution
+
+2. For debugging:
+   - Use --is_sql_debug flag for detailed SQL execution information
+   - Check log.txt and errors.log for execution details
+   - Start with a small subset of instances for testing
+
+3. For production:
+   - Disable debug mode for faster execution
+   - Monitor console output for progress and errors
+   - Check generated metrics files for detailed analysis
+
+SUPPORTED DATABASE TYPES
+========================
+
+1. SQLite (local):
+   - Instance IDs: local001, local002, etc.
+   - Database files: .sqlite format
+   - Location: resource/databases/spider2-localdb/
+
+2. BigQuery:
+   - Instance IDs: bq001, bq002, etc.
+   - Credentials: bigquery_credential.json
+   - Usage tracking: Monitors GB processed
+
+3. Snowflake:
+   - Instance IDs: sf001, sf002, etc.
+   - Credentials: snowflake_credential.json
+   - Database specification: In spider2-lite.jsonl
+
+OUTPUT FILES EXPLAINED
+======================
+
+1. Console Output:
+   - Overall accuracy score
+   - Column comparison metrics (precision, recall, F1)
+   - Row comparison metrics (precision, recall, F1)
+   - Performance statistics
+
+2. CSV Output (-ids.csv):
+   - List of correctly answered instance IDs
+   - Formatted for submission systems
+   - Database-specific ID transformations applied
+
+3. JSON Output (-detailed-metrics.json):
+   - Per-instance detailed metrics
+   - Column and row comparison breakdowns
+   - Overall combined metrics
+   - True positive/negative/false positive counts
+
+4. Log Files:
+   - log.txt: Complete execution log
+   - errors.log: Error details with context

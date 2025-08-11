@@ -527,6 +527,206 @@
 {"instance_id": "local354", "db": "f1", "question": "Among Formula 1 drivers who raced during the 1950s, which drivers completed a season in that decade with the same constructor in both the first and the last race they participated in, while also taking part in at least two distinct race rounds during that season?", "external_knowledge": null}
 {"instance_id": "local355", "db": "f1", "question": "Calculate the overall average first round and average last round of races missed by Formula 1 drivers across all years. Include only drivers who missed fewer than three races in a given year and who switched teams between their appearances immediately before and after their hiatus (i.e., the constructor ID for the race right before their first missed race must be different from the constructor ID for the race right after their last missed race in that year). Do not group results by year; return just the overall averages across the entire dataset.", "external_knowledge": null}
 {"instance_id": "local356", "db": "f1", "question": "Provide the full names of drivers who have been overtaken on track more times than they have overtaken others on track during race laps, excluding position changes due to pit stops (both at pit entry and exit), retirements, or position changes that occurred during the first lap of a race (considered as start movements).", "external_knowledge": null}
+{"instance_id": "local357", "db": "E_commerce", "question": "How many customers are there in each state?", "external_knowledge": null}
+{"instance_id": "local358", "db": "E_commerce", "question": "What are the top 10 cities with the most customers?", "external_knowledge": null}
+{"instance_id": "local359", "db": "E_commerce", "question": "Show me the details of a specific customer with the unique ID'861eff4711a542e4b93843c6dd7febb0'.", "external_knowledge": null}
+{"instance_id": "local360", "db": "E_commerce", "question": "List all orders placed by the customer with ID'06b8999e2fba1a1fbc88172c00ba8bc7'.", "external_knowledge": null}
+{"instance_id": "local361", "db": "E_commerce", "question": "How many orders have been placed each month?", "external_knowledge": null}
+{"instance_id": "local362", "db": "E_commerce", "question": "What is the current status of all orders?", "external_knowledge": null}
+{"instance_id": "local363", "db": "E_commerce", "question": "Find all orders that were delivered later than the estimated delivery date.", "external_knowledge": null}
+{"instance_id": "local364", "db": "E_commerce", "question": "What is the average time between order purchase and approval?", "external_knowledge": null}
+{"instance_id": "local365", "db": "E_commerce", "question": "Show me the full details of all orders, including customer information.", "external_knowledge": null}
+{"instance_id": "local366", "db": "E_commerce", "question": "Which customers have placed more than 5 orders?", "external_knowledge": null}
+{"instance_id": "local367", "db": "E_commerce", "question": "How many products are there in each category?", "external_knowledge": null}
+{"instance_id": "local368", "db": "E_commerce", "question": "What is the English translation for all product category names?", "external_knowledge": null}
+{"instance_id": "local369", "db": "E_commerce", "question": "List the top 10 heaviest products.", "external_knowledge": null}
+{"instance_id": "local370", "db": "E_commerce", "question": "What are the dimensions(length, height, width) of the product with ID'1e9e8ef04dbcff4541ed26657ea517e5'?", "external_knowledge": null}
+{"instance_id": "local371", "db": "E_commerce", "question": "Find products with a description length greater than 1000 characters.", "external_knowledge": null}
+{"instance_id": "local372", "db": "E_commerce", "question": "How many photos does each product have on average, grouped by category?", "external_knowledge": null}
+{"instance_id": "local373", "db": "E_commerce", "question": "Show me all products in the'beleza_saude' category.", "external_knowledge": null}
+{"instance_id": "local374", "db": "E_commerce", "question": "What is the total number of products?", "external_knowledge": null}
+{"instance_id": "local375", "db": "E_commerce", "question": "List all product categories that have the word'livros' in their name.", "external_knowledge": null}
+{"instance_id": "local376", "db": "E_commerce", "question": "Get the product category name in English for each product.", "external_knowledge": null}
+{"instance_id": "local377", "db": "E_commerce", "question": "How many sellers are there in each state?", "external_knowledge": null}
+{"instance_id": "local378", "db": "E_commerce", "question": "What are the top 10 cities with the most sellers?", "external_knowledge": null}
+{"instance_id": "local379", "db": "E_commerce", "question": "Show me the details of the seller with ID'3442f8959a84dea7ee197c632cb2df15'.", "external_knowledge": null}
+{"instance_id": "local380", "db": "E_commerce", "question": "Which sellers have sold the most items?", "external_knowledge": null}
+{"instance_id": "local381", "db": "E_commerce", "question": "What is the total revenue generated by each seller?", "external_knowledge": null}
+{"instance_id": "local382", "db": "E_commerce", "question": "Find sellers who have not sold any products yet.", "external_knowledge": null}
+{"instance_id": "local383", "db": "E_commerce", "question": "What is the average freight value for each seller?", "external_knowledge": null}
+{"instance_id": "local384", "db": "E_commerce", "question": "List all sellers from the city of'sao paulo'.", "external_knowledge": null}
+{"instance_id": "local385", "db": "E_commerce", "question": "How many sellers are there for each zip code prefix?", "external_knowledge": null}
+{"instance_id": "local386", "db": "E_commerce", "question": "Show the seller ID and the date of their last sale.", "external_knowledge": null}
+{"instance_id": "local387", "db": "E_commerce", "question": "What is the total number of items sold for each order?", "external_knowledge": null}
+{"instance_id": "local388", "db": "E_commerce", "question": "What is the average price of items sold?", "external_knowledge": null}
+{"instance_id": "local389", "db": "E_commerce", "question": "Show me the most expensive item sold.", "external_knowledge": null}
+{"instance_id": "local390", "db": "E_commerce", "question": "How many items of each product have been sold?", "external_knowledge": null}
+{"instance_id": "local391", "db": "E_commerce", "question": "What is the total freight value for all orders?", "external_knowledge": null}
+{"instance_id": "local392", "db": "E_commerce", "question": "List all order items for a specific order with ID'e481f51cbdc54678b7cc49136f2d6af7'.", "external_knowledge": null}
+{"instance_id": "local393", "db": "E_commerce", "question": "What are the different payment types used and how frequent is each?", "external_knowledge": null}
+{"instance_id": "local394", "db": "E_commerce", "question": "What is the average number of payment installments?", "external_knowledge": null}
+{"instance_id": "local395", "db": "E_commerce", "question": "Show me the total payment value for each order.", "external_knowledge": null}
+{"instance_id": "local396", "db": "E_commerce", "question": "Find orders paid with more than one payment method.", "external_knowledge": null}
+{"instance_id": "local397", "db": "E_commerce", "question": "What is the average review score for all orders?", "external_knowledge": null}
+{"instance_id": "local398", "db": "E_commerce", "question": "How many reviews are there for each score?", "external_knowledge": null}
+{"instance_id": "local399", "db": "E_commerce", "question": "Show me all reviews with a score of 1.", "external_knowledge": null}
+{"instance_id": "local400", "db": "E_commerce", "question": "What is the average time taken to answer a review?", "external_knowledge": null}
+{"instance_id": "local401", "db": "E_commerce", "question": "List all reviews for a specific order ID'e481f51cbdc54678b7cc49136f2d6af7'.", "external_knowledge": null}
+{"instance_id": "local402", "db": "E_commerce", "question": "Find orders that have a review but no comment message.", "external_knowledge": null}
+{"instance_id": "local403", "db": "E_commerce", "question": "How many reviews were created each month?", "external_knowledge": null}
+{"instance_id": "local404", "db": "E_commerce", "question": "Show me the review comments that contain the word'great'.", "external_knowledge": null}
+{"instance_id": "local405", "db": "E_commerce", "question": "What is the highest review score given?", "external_knowledge": null}
+{"instance_id": "local406", "db": "E_commerce", "question": "Which orders have not been reviewed yet?", "external_knowledge": null}
+{"instance_id": "local407", "db": "E_commerce", "question": "What are the latitude and longitude for the zip code prefix 1001?", "external_knowledge": null}
+{"instance_id": "local408", "db": "E_commerce", "question": "How many unique zip code prefixes are there in the geolocation data?", "external_knowledge": null}
+{"instance_id": "local409", "db": "E_commerce", "question": "List all cities in the state of'SP'.", "external_knowledge": null}
+{"instance_id": "local410", "db": "E_commerce", "question": "Find the geographical boundaries(min/max lat/lng) for the state of'RJ'.", "external_knowledge": null}
+{"instance_id": "local411", "db": "E_commerce", "question": "How many geolocation entries are there for each city?", "external_knowledge": null}
+{"instance_id": "local412", "db": "E_commerce", "question": "Show the customer's city and state along with their geolocation coordinates.", "external_knowledge": null}
+{"instance_id": "local413", "db": "E_commerce", "question": "Find the seller's city and state along with their geolocation coordinates.", "external_knowledge": null}
+{"instance_id": "local414", "db": "E_commerce", "question": "What is the average latitude and longitude for all locations?", "external_knowledge": null}
+{"instance_id": "local415", "db": "E_commerce", "question": "List zip code prefixes that appear in more than one city.", "external_knowledge": null}
+{"instance_id": "local416", "db": "E_commerce", "question": "Get the state for a given latitude and longitude range.", "external_knowledge": null}
+{"instance_id": "local417", "db": "E_commerce", "question": "How many qualified leads were there in total?", "external_knowledge": null}
+{"instance_id": "local418", "db": "E_commerce", "question": "When was the first contact made with any lead?", "external_knowledge": null}
+{"instance_id": "local419", "db": "E_commerce", "question": "How many leads came from each origin?", "external_knowledge": null}
+{"instance_id": "local420", "db": "E_commerce", "question": "List all leads that came from the'social' origin.", "external_knowledge": null}
+{"instance_id": "local421", "db": "E_commerce", "question": "How many leads were converted into sellers(closed leads)?", "external_knowledge": null}
+{"instance_id": "local422", "db": "E_commerce", "question": "What is the conversion rate from qualified lead to a closed deal?", "external_knowledge": null}
+{"instance_id": "local423", "db": "E_commerce", "question": "Who are the top 5 Sales Development Representatives(SDRs) by the number of closed deals?", "external_knowledge": null}
+{"instance_id": "local424", "db": "E_commerce", "question": "What is the most common business segment for new sellers?", "external_knowledge": null}
+{"instance_id": "local425", "db": "E_commerce", "question": "How many closed leads have a company?", "external_knowledge": null}
+{"instance_id": "local426", "db": "E_commerce", "question": "What is the average declared monthly revenue of new sellers?", "external_knowledge": null}
+{"instance_id": "local427", "db": "E_commerce", "question": "Show me the lead type distribution for closed leads.", "external_knowledge": null}
+{"instance_id": "local428", "db": "E_commerce", "question": "What is the average declared product catalog size for each business type?", "external_knowledge": null}
+{"instance_id": "local429", "db": "E_commerce", "question": "List all closed leads with a'cat' lead behavior profile.", "external_knowledge": null}
+{"instance_id": "local430", "db": "E_commerce", "question": "How many leads were won each month?", "external_knowledge": null}
+{"instance_id": "local431", "db": "E_commerce", "question": "Show the journey of a lead from qualified to closed.", "external_knowledge": null}
+{"instance_id": "local432", "db": "E_commerce", "question": "What is the average review score for each product category?", "external_knowledge": null}
+{"instance_id": "local433", "db": "E_commerce", "question": "List the top 5 best-selling products by revenue.", "external_knowledge": null}
+{"instance_id": "local434", "db": "E_commerce", "question": "What is the average delivery time for each seller's state?", "external_knowledge": null}
+{"instance_id": "local435", "db": "E_commerce", "question": "Which customers have bought products from sellers in their own state?", "external_knowledge": null}
+{"instance_id": "local436", "db": "E_commerce", "question": "What is the total payment value for each product category?", "external_knowledge": null}
+{"instance_id": "local437", "db": "E_commerce", "question": "Find the percentage of orders that have a review score of 5.", "external_knowledge": null}
+{"instance_id": "local438", "db": "E_commerce", "question": "What is the most common payment type for each product category?", "external_knowledge": null}
+{"instance_id": "local439", "db": "E_commerce", "question": "List customers who have only ever made one order.", "external_knowledge": null}
+{"instance_id": "local440", "db": "E_commerce", "question": "What is the average product weight for orders with a freight value over 50?", "external_knowledge": null}
+{"instance_id": "local441", "db": "E_commerce", "question": "Show the order status for orders with a total payment value greater than 1000.", "external_knowledge": null}
+{"instance_id": "local442", "db": "E_commerce", "question": "Which sellers have the highest average review scores?", "external_knowledge": null}
+{"instance_id": "local443", "db": "E_commerce", "question": "What is the time difference between the first and last order?", "external_knowledge": null}
+{"instance_id": "local444", "db": "E_commerce", "question": "Find the total revenue per state, based on customer location.", "external_knowledge": null}
+{"instance_id": "local445", "db": "E_commerce", "question": "What is the most frequently purchased product category in each state?", "external_knowledge": null}
+{"instance_id": "local446", "db": "E_commerce", "question": "Show the total number of orders and the total revenue for each month.", "external_knowledge": null}
+{"instance_id": "local447", "db": "E_commerce", "question": "List all products that have never been sold.", "external_knowledge": null}
+{"instance_id": "local448", "db": "E_commerce", "question": "What is the average number of products per order?", "external_knowledge": null}
+{"instance_id": "local449", "db": "E_commerce", "question": "Find the top 3 sellers in terms of revenue for each state.", "external_knowledge": null}
+{"instance_id": "local450", "db": "E_commerce", "question": "What is the distribution of business types for sellers in each state?", "external_knowledge": null}
+{"instance_id": "local451", "db": "E_commerce", "question": "Show the average declared monthly revenue for sellers by their lead origin.", "external_knowledge": null}
+{"instance_id": "local452", "db": "E_commerce", "question": "Which landing pages generate the most valuable leads(in terms of declared monthly revenue)?", "external_knowledge": null}
+{"instance_id": "local453", "db": "E_commerce", "question": "What is the average time from first contact to a won deal for each SDR?", "external_knowledge": null}
+{"instance_id": "local454", "db": "E_commerce", "question": "Compare the average product catalog size of sellers who have a company versus those who do not.", "external_knowledge": null}
+{"instance_id": "local455", "db": "E_commerce", "question": "What is the total freight value per customer state?", "external_knowledge": null}
+{"instance_id": "local456", "db": "E_commerce", "question": "Find the correlation between the length of the review comment and the review score.", "external_knowledge": null}
+{"instance_id": "local457", "db": "bank_sales_trading", "question": "List all weekly sales records", "external_knowledge": null}
+{"instance_id": "local458", "db": "bank_sales_trading", "question": "Show total sales by region", "external_knowledge": null}
+{"instance_id": "local459", "db": "bank_sales_trading", "question": "Find the platform with highest total transactions", "external_knowledge": null}
+{"instance_id": "local460", "db": "bank_sales_trading", "question": "Show sales by customer type for Retail segment", "external_knowledge": null}
+{"instance_id": "local461", "db": "bank_sales_trading", "question": "Average sales per transaction by region", "external_knowledge": null}
+{"instance_id": "local462", "db": "bank_sales_trading", "question": "List distinct platforms in weekly sales", "external_knowledge": null}
+{"instance_id": "local463", "db": "bank_sales_trading", "question": "Weekly sales and transactions for USA region", "external_knowledge": null}
+{"instance_id": "local464", "db": "bank_sales_trading", "question": "Week dates and sales where sales exceed 10000", "external_knowledge": null}
+{"instance_id": "local465", "db": "bank_sales_trading", "question": "Count distinct regions in weekly sales", "external_knowledge": null}
+{"instance_id": "local466", "db": "bank_sales_trading", "question": "Running total of sales by region over time", "external_knowledge": null}
+{"instance_id": "local467", "db": "bank_sales_trading", "question": "Top three platforms by transactions within each region", "external_knowledge": null}
+{"instance_id": "local468", "db": "bank_sales_trading", "question": "Total sales by platform and segment", "external_knowledge": null}
+{"instance_id": "local469", "db": "bank_sales_trading", "question": "Regions with above average sales", "external_knowledge": null}
+{"instance_id": "local470", "db": "bank_sales_trading", "question": "Regions present in both weekly sales and bitcoin members", "external_knowledge": null}
+{"instance_id": "local471", "db": "bank_sales_trading", "question": "Percentage of total sales by region", "external_knowledge": null}
+{"instance_id": "local472", "db": "bank_sales_trading", "question": "List all cleaned weekly sales records for Youth demographic", "external_knowledge": null}
+{"instance_id": "local473", "db": "bank_sales_trading", "question": "Monthly sales totals for calendar year 2023", "external_knowledge": null}
+{"instance_id": "local474", "db": "bank_sales_trading", "question": "Total sales by calendar year in cleaned weekly sales", "external_knowledge": null}
+{"instance_id": "local475", "db": "bank_sales_trading", "question": "Average transaction by age band", "external_knowledge": null}
+{"instance_id": "local476", "db": "bank_sales_trading", "question": "Sales by demographic ordered descending", "external_knowledge": null}
+{"instance_id": "local477", "db": "bank_sales_trading", "question": "Top week by sales in 2023 from cleaned weekly sales", "external_knowledge": null}
+{"instance_id": "local478", "db": "bank_sales_trading", "question": "Join weekly and cleaned weekly sales by week date", "external_knowledge": null}
+{"instance_id": "local479", "db": "bank_sales_trading", "question": "Average sales per transaction by region in cleaned weekly sales", "external_knowledge": null}
+{"instance_id": "local480", "db": "bank_sales_trading", "question": "Sales by age band and demographic combination", "external_knowledge": null}
+{"instance_id": "local481", "db": "bank_sales_trading", "question": "Seasonal average sales using month number", "external_knowledge": null}
+{"instance_id": "local482", "db": "bank_sales_trading", "question": "List all shopping cart users who started on 2025 01 01", "external_knowledge": null}
+{"instance_id": "local483", "db": "bank_sales_trading", "question": "Count distinct users in shopping cart users", "external_knowledge": null}
+{"instance_id": "local484", "db": "bank_sales_trading", "question": "First 10 users with start dates", "external_knowledge": null}
+{"instance_id": "local485", "db": "bank_sales_trading", "question": "Average days from start to first event", "external_knowledge": null}
+{"instance_id": "local486", "db": "bank_sales_trading", "question": "All page view events ordered by event time", "external_knowledge": null}
+{"instance_id": "local487", "db": "bank_sales_trading", "question": "Event counts by type with names", "external_knowledge": null}
+{"instance_id": "local488", "db": "bank_sales_trading", "question": "Most visited page by name", "external_knowledge": null}
+{"instance_id": "local489", "db": "bank_sales_trading", "question": "Total visits per shopping cart page", "external_knowledge": null}
+{"instance_id": "local490", "db": "bank_sales_trading", "question": "Pages under Checkout product category", "external_knowledge": null}
+{"instance_id": "local491", "db": "bank_sales_trading", "question": "Users who added items to cart using event name", "external_knowledge": null}
+{"instance_id": "local492", "db": "bank_sales_trading", "question": "Sequence of events for a visit abc 123", "external_knowledge": null}
+{"instance_id": "local493", "db": "bank_sales_trading", "question": "Conversion rate from page view to add to cart", "external_knowledge": null}
+{"instance_id": "local494", "db": "bank_sales_trading", "question": "Most common event sequence of length three", "external_knowledge": null}
+{"instance_id": "local495", "db": "bank_sales_trading", "question": "Total add to cart events by campaign", "external_knowledge": null}
+{"instance_id": "local496", "db": "bank_sales_trading", "question": "List event names for event type two", "external_knowledge": null}
+{"instance_id": "local497", "db": "bank_sales_trading", "question": "Events for a specific page id 101", "external_knowledge": null}
+{"instance_id": "local498", "db": "bank_sales_trading", "question": "Page names for page id 200", "external_knowledge": null}
+{"instance_id": "local499", "db": "bank_sales_trading", "question": "List all interest metrics for May 2024", "external_knowledge": null}
+{"instance_id": "local500", "db": "bank_sales_trading", "question": "Ranking ordered by index value descending with interest id", "external_knowledge": null}
+{"instance_id": "local501", "db": "bank_sales_trading", "question": "Top five interest ids by percentile ranking", "external_knowledge": null}
+{"instance_id": "local502", "db": "bank_sales_trading", "question": "Average percentile ranking for Machine Learning", "external_knowledge": null}
+{"instance_id": "local503", "db": "bank_sales_trading", "question": "Interest with top rank in May 2023", "external_knowledge": null}
+{"instance_id": "local504", "db": "bank_sales_trading", "question": "Month over month growth rate for Data Science index value", "external_knowledge": null}
+{"instance_id": "local505", "db": "bank_sales_trading", "question": "Highest index value recorded in interest metrics", "external_knowledge": null}
+{"instance_id": "local506", "db": "bank_sales_trading", "question": "List interest map entries created after 2024 01 01", "external_knowledge": null}
+{"instance_id": "local507", "db": "bank_sales_trading", "question": "Find interests last modified before 2024 06 01", "external_knowledge": null}
+{"instance_id": "local508", "db": "bank_sales_trading", "question": "Show interest summary for Data Science", "external_knowledge": null}
+{"instance_id": "local509", "db": "bank_sales_trading", "question": "Bitcoin prices for BTC on 2024 05 01", "external_knowledge": null}
+{"instance_id": "local510", "db": "bank_sales_trading", "question": "Daily high and low prices for BTC in March 2023", "external_knowledge": null}
+{"instance_id": "local511", "db": "bank_sales_trading", "question": "Price of ETH on 2023 04 01", "external_knowledge": null}
+{"instance_id": "local512", "db": "bank_sales_trading", "question": "Bitcoin transactions for ticker BTC", "external_knowledge": null}
+{"instance_id": "local513", "db": "bank_sales_trading", "question": "Total quantity traded per bitcoin transaction type", "external_knowledge": null}
+{"instance_id": "local514", "db": "bank_sales_trading", "question": "Average percentage fee by bitcoin transaction type", "external_knowledge": null}
+{"instance_id": "local515", "db": "bank_sales_trading", "question": "Most active trading hours for bitcoin", "external_knowledge": null}
+{"instance_id": "local516", "db": "bank_sales_trading", "question": "Total BTC bought by members per region", "external_knowledge": null}
+{"instance_id": "local517", "db": "bank_sales_trading", "question": "Bitcoin member names with their BTC quantities", "external_knowledge": null}
+{"instance_id": "local518", "db": "bank_sales_trading", "question": "Bitcoin members without any transactions", "external_knowledge": null}
+{"instance_id": "local519", "db": "bank_sales_trading", "question": "Latest bitcoin prices for all tickers", "external_knowledge": null}
+{"instance_id": "local520", "db": "bank_sales_trading", "question": "Value of BTC BUY transactions on a given day", "external_knowledge": null}
+{"instance_id": "local521", "db": "bank_sales_trading", "question": "Regions with bitcoin member counts", "external_knowledge": null}
+{"instance_id": "local522", "db": "bank_sales_trading", "question": "Customers by region name from nodes and regions", "external_knowledge": null}
+{"instance_id": "local523", "db": "bank_sales_trading", "question": "Total transaction amount by customer", "external_knowledge": null}
+{"instance_id": "local524", "db": "bank_sales_trading", "question": "Transactions with negative amounts in customer transactions", "external_knowledge": null}
+{"instance_id": "local525", "db": "bank_sales_trading", "question": "Customers with transactions but no region assignment", "external_knowledge": null}
+{"instance_id": "local526", "db": "bank_sales_trading", "question": "Customer id and region name for active nodes only", "external_knowledge": null}
+{"instance_id": "local527", "db": "bank_sales_trading", "question": "Average active duration in days for customer nodes", "external_knowledge": null}
+{"instance_id": "local528", "db": "bank_sales_trading", "question": "Customers with nodes in multiple regions", "external_knowledge": null}
+{"instance_id": "local529", "db": "bank_sales_trading", "question": "Recent 30 day customer transactions", "external_knowledge": null}
+{"instance_id": "local530", "db": "bank_sales_trading", "question": "Monthly transaction counts in customer transactions", "external_knowledge": null}
+{"instance_id": "local531", "db": "bank_sales_trading", "question": "Customer transaction frequency and totals", "external_knowledge": null}
+{"instance_id": "local532", "db": "bank_sales_trading", "question": "Total records count across all tables", "external_knowledge": null}
+{"instance_id": "local533", "db": "bank_sales_trading", "question": "Vegetable transactions with quantity sold above 50", "external_knowledge": null}
+{"instance_id": "local534", "db": "bank_sales_trading", "question": "Vegetable sale records excluding returns", "external_knowledge": null}
+{"instance_id": "local535", "db": "bank_sales_trading", "question": "Vegetable transactions with discount above 20 percent", "external_knowledge": null}
+{"instance_id": "local536", "db": "bank_sales_trading", "question": "Total revenue by day of week from veg transactions", "external_knowledge": null}
+{"instance_id": "local537", "db": "bank_sales_trading", "question": "Weekend versus weekday sales totals in veg transactions", "external_knowledge": null}
+{"instance_id": "local538", "db": "bank_sales_trading", "question": "Vegetable names and quantities sold via join", "external_knowledge": null}
+{"instance_id": "local539", "db": "bank_sales_trading", "question": "Average selling price per kg by item name", "external_knowledge": null}
+{"instance_id": "local540", "db": "bank_sales_trading", "question": "Total quantity sold by vegetable category", "external_knowledge": null}
+{"instance_id": "local541", "db": "bank_sales_trading", "question": "Items with loss rate greater than five percent", "external_knowledge": null}
+{"instance_id": "local542", "db": "bank_sales_trading", "question": "Wholesale price records above twenty for veg items", "external_knowledge": null}
+{"instance_id": "local543", "db": "bank_sales_trading", "question": "Wholesale price of item 3005 on 2023 06 10", "external_knowledge": null}
+{"instance_id": "local544", "db": "bank_sales_trading", "question": "Vegetable items in Leafy Greens category", "external_knowledge": null}
+{"instance_id": "local545", "db": "bank_sales_trading", "question": "Profit margin for Tomato using txn and wholesale data", "external_knowledge": null}
+{"instance_id": "local546", "db": "bank_sales_trading", "question": "Top five most profitable vegetables considering loss and wholesale", "external_knowledge": null}
+{"instance_id": "local547", "db": "bank_sales_trading", "question": "Vegetable names and their wholesale prices", "external_knowledge": null}
+{"instance_id": "local548", "db": "bank_sales_trading", "question": "Loss rate for Potato from loss rate table", "external_knowledge": null}
+{"instance_id": "local549", "db": "bank_sales_trading", "question": "Total revenue after discounts in veg transactions", "external_knowledge": null}
+{"instance_id": "local550", "db": "bank_sales_trading", "question": "Top five most expensive veg transactions by computed revenue", "external_knowledge": null}
+{"instance_id": "local551", "db": "bank_sales_trading", "question": "List veg items by category code five", "external_knowledge": null}
+{"instance_id": "local552", "db": "bank_sales_trading", "question": "Find wholesale records for item code 101", "external_knowledge": null}
+{"instance_id": "local553", "db": "bank_sales_trading", "question": "Bitcoin member regions and total quantities traded", "external_knowledge": null}
+{"instance_id": "local554", "db": "bank_sales_trading", "question": "Customers who made both deposit and withdrawal transactions", "external_knowledge": null}
+{"instance_id": "local555", "db": "bank_sales_trading", "question": "Transactions by type for a specific customer 456", "external_knowledge": null}
+{"instance_id": "local556", "db": "bank_sales_trading", "question": "Total transaction amount for customer 123", "external_knowledge": null}
 {"instance_id": "sf001", "db": "GLOBAL_WEATHER__CLIMATE_DATA_FOR_BI", "question": "Assuming today is April 1, 2024, I would like to know the daily snowfall amounts greater than 6 inches for each U.S. postal code during the week ending after the first two full weeks of the previous year. Show the postal code, date, and snowfall amount.", "external_knowledge": null}
 {"instance_id": "sf003", "db": "GLOBAL_GOVERNMENT", "question": "For each year from 2015 to 2020, which Census Zip Code Tabulation Area had the second-highest annual population growth rate? Include only areas with a population estimate of at least 25,000 people in that year (based on 5-Year American Community Survey estimates). For each year, provide the zip code, state abbreviation, and the annual growth rate percentage.", "external_knowledge": null}
 {"instance_id": "sf002", "db": "FINANCE__ECONOMICS", "question": "As of December 31, 2022, list the top 10 active banks with assets exceeding $10 billion, ranked by the highest percentage of uninsured assets, where the percentage is calculated as one minus the value of the '% Insured (Estimated)' variable from quarterly estimates. Provide the names of these banks and their respective percentages of uninsured assets.", "external_knowledge": null}
