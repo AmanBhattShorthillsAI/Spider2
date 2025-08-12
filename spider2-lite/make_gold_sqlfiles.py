@@ -68,7 +68,7 @@ def process_sql_files(input_dir: str, output_dir: str, start_num: int = 457, end
 
 if __name__ == "__main__":
     # Use the specified paths
-    input_dir = "/Users/shtlpmac050/Documents/Spider2/fork_spider/Spider2.0-fork/spider2-lite/evaluation_suite/gold/csv"
-    output_dir = "/Users/shtlpmac050/Documents/Spider2/fork_spider/Spider2.0-fork/spider2-lite/evaluation_suite/gold/sql"
+    input_dir = "evaluation_suite/gold/csv"
+    output_dir = "evaluation_suite/gold/sql"
     
     process_sql_files(input_dir, output_dir, start_num=457, end_num=556)

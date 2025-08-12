@@ -47,7 +47,7 @@ def get_sqlite_result(db_path, query, save_dir=None, file_name="result.csv", chu
     
     return True, None
 
-def execute_gold_sql_query(db_path, gold_sql_query, gold_sql_file_path,         gold_result_dir="/Users/shtlpmac050/Documents/Spider2/fork_spider/Spider2.0-fork/spider2-lite/evaluation_suite/gold/exec_result", chunksize=500):
+def execute_gold_sql_query(db_path, gold_sql_query, gold_sql_file_path, gold_result_dir="evaluation_suite/gold/exec_result", chunksize=500):
     """
     Execute gold SQL query on the database and save results to gold_result_dir.
     Only executes if the corresponding CSV file doesn't already exist.
@@ -82,8 +82,8 @@ def execute_gold_sql_query(db_path, gold_sql_query, gold_sql_file_path,         
 
 def main():
     # Paths
-    gold_sql_dir = "/Users/shtlpmac050/Documents/Spider2/fork_spider/Spider2.0-fork/spider2-lite/evaluation_suite/gold/sql"
-    gold_result_dir = "/Users/shtlpmac050/Documents/Spider2/fork_spider/Spider2.0-fork/spider2-lite/evaluation_suite/gold/exec_result"
+    gold_sql_dir = "evaluation_suite/gold/sql"
+    gold_result_dir = "evaluation_suite/gold/exec_result"
     
     # Load metadata
     spider2sql_metadata = load_jsonl_to_dict("spider2-lite.jsonl")
